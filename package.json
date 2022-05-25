@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "dependencies": {
+    "angular-utils-pagination": "^0.11.1"
+  }
+}

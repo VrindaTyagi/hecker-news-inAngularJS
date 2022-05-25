@@ -1,0 +1,8 @@
+<div ng-controller="getMainData">
+  <ul>
+    <li  dir-paginate="item in main | itemsPerPage: 10" >
+      {{item.title}}
+    </li>
+  </ul>
+  <dir-pagination-controls></dir-pagination-controls>
+</div>

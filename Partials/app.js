@@ -1,11 +1,10 @@
 var demoApp = angular.module("demoApp", ['ngRoute', 'angularUtils.directives.dirPagination']);
 
-
 function getMainData($scope, $http) {
   $http
     .get("https://hacker-news.firebaseio.com/v0/topstories.json")
     .then(function (response) {
-      let results = response.data.slice(0, 10);
+      let results = response.data.slice(0, 50);
       let data = [];
       results.forEach((id) => {
         $http

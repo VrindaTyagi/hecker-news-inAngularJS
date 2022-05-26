@@ -1,7 +1,8 @@
 <div ng-app="demoApp" ng-controller="getNewData">
   <ul>
-    <li ng-repeat="item in new">
+    <li  dir-paginate="item in new | itemsPerPage: 10" >
       {{item.title}}
     </li>
   </ul>
+  <dir-pagination-controls></dir-pagination-controls>
 </div>
